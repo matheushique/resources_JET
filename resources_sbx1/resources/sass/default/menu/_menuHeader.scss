@@ -1,0 +1,153 @@
+$menuBG: $primary-color;
+$menuTextColor: $menu-text;
+$menuHeight: 20px;
+$menuHoverBorderColor: $menu-hover-bs;
+$colorLinkSubMenu: "#666";
+
+.menuheader {
+  background-color: $menuBG;
+  min-height: $menuHeight;
+  width: 100%;
+  /*Sub Classes*/
+  .ui.menu {
+    background: transparent;
+    background-color: transparent;
+    border: 0px;
+    box-shadow: none;
+    display: flex;
+    font-weight: 400;
+    min-height: $menuHeight;
+    flex-wrap: wrap;
+    margin:0;
+    li {
+      height: $menuHeight;
+
+      &:hover,
+      &.active,
+      &:focus {
+        box-shadow: none;
+        }
+      > .item {
+          word-wrap: normal;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-transform: uppercase;
+          margin:0;
+          font-size: 14px;
+          line-height: $menuHeight;
+          padding: 0 6px !important; 
+
+          &:before {
+            width: 0;
+            background: transparent;
+          }
+
+          &:hover {
+            box-shadow: inset 0 -6px 0 $menuHoverBorderColor;
+            background: #fff;
+          }
+            
+        
+        > .icon.dropdown {
+          line-height: 18px;
+          }
+        > .icon.content {
+          font-size: 26px;
+          line-height: 1;
+          margin-right: 15px;
+          }
+        .menu {
+          border-radius: 0px !important;
+          margin-top: 0px !important;
+          z-index: 10;
+          .item {
+            line-height: 18px;
+            &:hover,
+            &.active,
+            &:focus {
+              box-shadow: none !important;
+              }
+            }
+          .menu {
+            box-shadow: none;
+            }
+            
+          }
+        }
+      }
+      .header {
+        a {
+          color:$colorLinkSubMenu;
+          font-size:14px;
+          font-weight: 300;
+        }
+      }
+    }
+  .ui.menu .item {
+    color: $menuTextColor;
+    line-height: $menuHeight;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    }
+  .ui.menu .item:hover,
+  .ui.menu .item.active {
+    box-shadow: inset 0 -5px 0 $menuHoverBorderColor;
+    color: $menuTextColor;
+    }
+  .sub-megamenu {
+    .ui.link.list {
+      .item {
+        color: rgba(0, 0, 0, 0.7);
+        margin: 0.5em 0px;
+        padding-left: 10px;
+        }
+      }
+    }
+  .ui.menu > .item:first-child,
+  .ui.menu > .item:last-child {
+    border-radius: 0px;
+    }
+  .ui.list {
+    
+    h4 {
+      font-weight: normal;
+    }
+    .item {
+      color: rgba(0, 0, 0, .7);
+      padding-left: 10px !important;
+      &:hover,
+      &.active,
+      &:focus {
+        color: rgba(0, 0, 0, .9);
+        box-shadow: inset 5px 0 0 $menuHoverBorderColor;
+        transition: opacity 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+.wsmain {
+  height: $menuHeight;
+
+  .wsmenu {
+    height: $menuHeight;
+
+    .wsmenu-list {
+      height: $menuHeight;
+      justify-content: space-evenly;
+
+      i.dropdown-icon {
+        display: block;
+        width: 9px;
+        height: 7px;
+        margin-left: 5px;
+        background-repeat: no-repeat;
+        background-image: url('/assets/image/Header/dropdown-menu.png');
+      }
+    }
+  }
+}
+/* Mega Menu Start */
+@import "wsmenu/style";
+/* MegaMenu End */

@@ -1,0 +1,38 @@
+.ui {
+
+    &.divider {
+
+        color:$secondary-color;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 50px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        text-transform: inherit !important;
+
+        a {
+            color:$secondary-color;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 50px;
+            text-transform: inherit !important;
+        }
+
+        &.medium {
+            margin: 0.5rem 0;
+        }
+
+        &.small {
+            margin: 0.2rem 0;
+        }
+
+        &::after {
+            display: none !important;
+        }
+
+        &::before {
+            display: none !important;
+        }
+    }
+}

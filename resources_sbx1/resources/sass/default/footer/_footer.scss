@@ -1,0 +1,632 @@
+.newsletter-bar {
+	padding-bottom: 10px;
+	background: #fff;
+	position: relative;
+	border-top: 1px solid#EAEAEA;
+
+	i.envelope {
+		float: left;
+		margin-right: 5px;
+		font-size: 3em;
+		color: #fff;
+		line-height: 40px;
+	}
+
+	.newsletter-input-div {
+		width: 50%;
+		padding-top: 10px;
+
+		.field{
+			display: flex;
+
+			.button-newsletter {
+				width: 30%;
+
+				@media screen and (max-width: $mobile-bp) {
+					width: 182px !important;
+				}
+
+			}
+
+			.input {
+				width: 70% !important;
+	
+				#email_news {
+					padding-left: 12px !important;
+					border-radius: 0;
+					height: 40px;
+					border: 1px solid #DCDCDC;
+				}
+
+				#email_news::placeholder {
+					font-weight: 400;
+					font-size: 16px !important;
+					line-height: 23px;
+					color: #878787 !important;
+				}
+
+				@media screen and (max-width: $mobile-bp) {
+					width: 100% !important;
+					margin-bottom: 13px !important;
+				}
+	
+			}
+
+			@media screen and (max-width: $mobile-bp) {
+				flex-direction: column;
+			}
+
+		}
+
+		@media screen and (max-width: $mobile-bp) {
+			width: 100%;
+			padding-top: 25px;
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 18px;
+			color: #878787;
+			margin-top: 10px;
+		}
+
+	}
+
+	.newsletter-text {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+
+		span.text {
+			color: #999;
+			font-size: 12px;
+		}
+	
+		h4.header {
+			color: $secondary-color;
+			font-size: 32px;
+			font-weight: 700;
+			padding-right: 15px;
+			margin: 0;
+			float: left;
+			line-height: 46px;
+	
+			@media screen and (max-width: $mobile-bp) {
+				border:0;
+				padding-right: 0;
+				font-size: 22px;
+				line-height: 36px;
+			}
+		}
+
+		p {
+			font-weight: 400 !important;
+			font-size: 14px !important;
+			line-height: 18px;
+			color: $secondary-color !important;
+			margin-top: 8px !important;
+		}
+
+	}
+
+	.inline.fields {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: space-between;
+		padding-top: 26px;
+
+		@media screen and (max-width: $mobile-bp) {
+			padding-top: 0 !important;
+		}
+
+		.field {
+			@media screen and (max-width: $mobile-bp) {
+				padding-right: 0 !important;
+			}
+		}
+
+	}
+
+
+	.inline {
+		>.icon.input {
+			@media screen and (max-width: $mobile-bp) {
+				display:table;
+			}
+		}
+
+		.textNews {
+			@media screen and (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
+				max-width: 180px;
+
+			}
+
+			@media screen and (max-width: $mobile-bp) {
+				margin: 10px auto !important;
+				padding:0 !important;
+			}
+		}
+
+		#email_news {
+			background: #fff;
+			font-size: 12px;
+			color: #666666;
+		}
+
+		i.mail.icon {
+			color: $secondary-color;
+			opacity: 1 !important;
+
+			@media screen and (max-width: $mobile-bp) {
+				top: 16px;
+				height:initial;
+			}
+		}
+
+		#btn_news {
+			color: #ffffff;
+			text-transform: uppercase;
+			background: $secondary-color;
+			font-size: 16px;
+			border-radius: 0 !important;
+			width: 100%;
+
+			@media screen and (max-width: $mobile-bp) {
+				width: 100%;
+				margin:0 auto;
+			}
+		}
+
+
+	}
+
+}
+
+.footer-wrap {
+	position: absolute;
+	bottom: 0px;
+}
+
+.segment {
+	border-bottom: none !important;
+}
+
+.footer {
+    background-color: #FFFFFF !important;
+    padding-bottom: 20px !important;
+
+    > .ui.container {
+        > .ui.grid {
+            > .column {
+                padding-bottom: 0 !important;
+				padding-top: 0 !important;
+            }
+        }
+    }
+
+    .header {
+        text-transform: uppercase;
+        font-size: 14px !important;
+        margin: 0;
+
+        @media screen and (max-width: $mobile-bp) {
+            line-height: 30px;
+        }
+
+        i.icon:only-child {
+            display: none;
+            float: right !important;
+            font-size: 1em;
+        }
+    }
+
+
+    socialbar {
+        display: flex;
+		gap: 0.25rem;
+
+        a {
+
+			display: flex;
+
+            i.icon {
+				font-size: 20px;
+				line-height: 30px;
+				color: #fff;
+				background: #6148C8;
+				height: 30px;
+				width: 30px;
+				border-radius: 51%;
+				margin: 0 !important;
+            }
+        }
+    }
+
+    .list {
+        &.link {
+            a,
+            h5 {
+                color: $secondary-color !important;
+                font-size: 15px;
+                font-weight: 300;
+                margin: 0;
+                line-height: 27px;	
+            }
+
+			h4 {
+				color: $secondary-color !important;
+				font-size: 15px !important;
+				font-weight: 700 !important;
+				margin: 0;
+				line-height: 27px !important;
+			}
+
+            @media screen and (max-width: $mobile-bp) {
+                padding: 1em;
+                text-align: left !important;
+                margin: 10px 0 0 0;
+                display: none;
+                background: #f8f8f8;
+            }
+        }
+
+        &.selos {
+            margin-top: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (min-width: $mobile-bp) {
+                justify-content: flex-start;
+            }
+
+            a {
+                margin: 5px;
+                &#seloEconfy {
+                    position: relative !important;
+                }
+            }
+        }
+
+
+
+        &.selos a img {
+            max-height: 100px;
+            display: inline-block;
+            background-size: cover;
+        }
+    }
+
+    p {
+        color: $secondary-color;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    h4,
+    h5 {
+        font-weight: bold;
+        font-size: 16px;
+        color: $secondary-color !important;
+    }
+
+    .tireDuvidas {
+        background: #fff;
+		border-radius: 0;
+		display: flex;
+		justify-content: center;
+		width: 143px;
+		border: 1px solid;
+		height: 30px;
+		align-items: center;
+		transition: 0.3s;
+		margin-top: 5px !important;
+
+        h5 {
+            color: $secondary-color !important;
+            margin: 0;
+            font-size: 15px !important;
+			font-weight: 700 !important;
+			line-height: 20px !important;
+        }
+
+		i {
+			height: 12px !important;
+			font-size: 16.67px !important; 
+			font-weight: 700;
+			color: $secondary-color;
+		}
+
+		&:hover {
+			background: $secondary-color;
+
+
+			h5 {
+				color: $primary-color !important;
+			}
+	
+			i {
+				color: $primary-color !important;
+			}
+
+		}
+
+		@media screen and (max-width: $mobile-bp) {
+			margin-top: 20px !important;
+    		margin-bottom: 30px;
+		}
+
+
+    }
+
+
+	.listMobile {
+			
+		.help-whats-div , .column-cust{
+			width: 33%;
+		}
+
+		.column-cust-last { 
+			width: 100%;
+		}
+
+	}
+
+	@media (max-width: $mobile-bp) {
+		.divider {
+			display: none;
+		}
+
+		.listMobile {
+
+			.help-whats-div{ 
+				width: 100%;
+				padding: 0 15px;
+			}
+			
+			.column-cust-last , .column-cust{
+				width: 100%;
+				padding: 15px 0;
+				border-bottom: 1px solid #E5E5E5;
+			}
+
+			.column-cust{
+				margin: 0 15px;
+			}
+
+			h4 {
+				line-height: 22px !important;
+				font-size: 15px !important;
+				font-weight: 600 !important;
+
+				i{
+					opacity: .5 !important;
+				}
+
+			}
+
+		}
+		
+	}
+	
+	.footer-bottom-weigth {
+		margin-bottom: 16px !important;
+		color: $text-footer-about !important;
+		font-weight: 400;
+		font-size: 10px !important;
+		line-height: 14px;
+	}
+
+	@media screen and (max-width: $mobile-bp) {
+		.formas-pagamento {
+			padding-bottom: 23px !important;
+		}
+	}
+
+	.certificate-logos {
+		display: flex !important;
+
+		.jet-certificate-div {
+			width: 33%;
+
+			.footer-bottom-weigth {
+				margin-bottom: 7px !important;
+			}
+		}
+
+		.prumo-logo-div , .jet-logo-div {
+			width: 25%;
+
+			.footer-bottom-weigth {
+				margin-bottom: 21px !important;
+			}
+
+		}
+
+		@media (max-width: $mobile-bp){
+
+			flex-wrap: wrap;
+
+			.jet-certificate-div {
+				width: 50%;
+			}
+
+			.jet-logo-div {
+				width: 50%;
+				padding-left: 22px;
+			}
+
+			.prumo-logo-div{ 
+				width: 100%;
+				padding-top: 16px;
+			}
+		}
+
+	}
+
+	.logo-text-footer {
+		display: flex;
+		align-items: center;
+
+		a {
+			width: 23%;
+
+			@media screen and (max-width: $mobile-bp) {
+				width: 35%;
+				margin-bottom: 13px !important;
+			}
+		}
+
+		img {
+			width: 120px;
+			height: 110px;
+		}
+
+		p {
+			width: 55%;
+
+			@media screen and (max-width: $mobile-bp) {
+				width: 95%;
+			}
+
+		}
+
+		@media screen and (max-width: $mobile-bp) {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+
+	}
+
+    .ui.form {
+
+
+        > .inline {
+            > .icon.input {
+                @media screen and (max-width: $mobile-bp) {
+                    display: table;
+                }
+
+                .mail {
+                    color: $black;
+                    opacity: 1 !important;
+
+                    @media screen and (max-width: $mobile-bp) {
+                        top: 22px;
+                        height: initial;
+                    }
+                }
+
+                #email_news {
+                    @media screen and (max-width: $mobile-bp) {
+                        width: 100%;
+                    }
+                }
+
+                #btn_news {
+                    margin-left: 5px;
+                    color: #000;
+                    text-transform: uppercase;
+                    background: #fff;
+
+                    @media screen and (max-width: $mobile-bp) {
+                        width: 100%;
+                        margin: 5px auto 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subFooter {
+	background-color: $primary-color;
+
+	.menu_subfooter {
+		margin-bottom: 1em;
+
+		a.submenu {
+			padding: .42857143em 0.84285714em;
+			color: $secondary-color;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.textoEmpresa {
+
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 14px;
+		color: $text-footer-about;
+
+		>h6 {
+			color: $text-footer-about;
+			font-size:12px;
+			font-weight: normal;
+			margin:0 0 10px 0;
+			display: inline-block;
+			@media (max-width: $mobile-bp) {
+				margin:0 0 0 0;
+			}
+		}
+		> address {
+			color: $text-footer-about;
+			font-size:12px;
+			font-weight: normal;
+			font-style: normal;
+			display: inline-block;
+		}
+	}
+
+	.ui.tiny.images {
+		@media screen and (max-width: $mobile-bp) {
+			text-align: center;
+		}
+	}
+
+
+}
+
+.jetBrand{
+	height: 35px;
+	text-align: center;
+	padding: 0px !important;
+	background: black !important;
+
+	img{
+		height: 25px;
+		margin:5px;
+	}
+}
+#seloEbit{
+	display: inline-block !important;
+	width:84px;
+	@media screen and (max-width: $mobile-bp) {
+		float:none;
+		margin: 0;
+		width: auto;
+	}
+
+}
+#jetLogo {
+	height: 57px;
+
+	.st0 {
+		fill: $secondary-color;
+
+	}
+
+	.st1 {
+		fill: rgba(255,0, 0, 1);
+	}
+}
+
+#prumoLogo {
+    height: 23.89px;
+}
